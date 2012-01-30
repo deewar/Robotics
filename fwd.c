@@ -3,7 +3,7 @@ const int leftWheel = motorB;
 int ForwardSpeed = 10;
 int StraightTime  = 835;
 int TurnSpeed = 10;
-int TurnTime = 165;
+int TurnTime = 180;
 
 void Forward40cm(){
   motor[rightWheel] = ForwardSpeed;
@@ -29,28 +29,13 @@ void Right90deg(){
   wait10Msec(TurnTime);
 }
 
-void chill(){
-  motor[rightWheel] = 0;
-  motor[leftWheel] = 0;
-  wait10Msec(100);
-}
-
 task main(){
   //Right90deg();
-  wait10Msec(100);
   Forward40cm();
-  chill();
+  //Left90deg();
+  /*Forward40cm();
   Left90deg();
-  chill();
   Forward40cm();
-  chill();
   Left90deg();
-  chill();
-  Forward40cm();
-  chill();
-  Left90deg();
-  chill();
-  Forward40cm();
-  chill();
-  Left90deg();
+  Forward40cm();*/
 }
