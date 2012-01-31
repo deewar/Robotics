@@ -1,9 +1,9 @@
 const int rightWheel = motorA;
 const int leftWheel = motorB;
 int ForwardSpeed = 10;
-int StraightTime  = 835;
+int StraightTime  =835;
 int TurnSpeed = 10;
-int TurnTime = 165;
+int TurnTime = 171;
 
 void Forward40cm(){
   motor[rightWheel] = ForwardSpeed;
